@@ -1,0 +1,534 @@
+/* =========================================================
+   PASTICCIO — Cucina Italiana
+   Folha de estilos principal
+   ========================================================= */
+
+:root {
+  --brown: #49372D;
+  --brown-deep: #302d2b;
+  --brown-soft: #5a4033;
+  --burgundy: #4A1C24;
+  --burgundy-light: #713B45;
+  --gold: #B8935A;
+  --cream: #f2e9dc;
+  --white: #fffaf3;
+  --green: #4EAC5B;
+  --body-font: "Roboto", sans-serif;
+  --display-font: "Roboto", sans-serif;
+  --title-font:  'Bodoni Moda', serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+
+body {
+  margin: 0;
+  background: var(--brown);
+  color: var(--cream);
+  font-family: var(--body-font);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+a { text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+h1, h2, h3 {
+  font-family: var(--title-font);
+  font-weight: 500;
+}
+
+h2 {
+  color: var(--gold);
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.section-space { padding: 105px 0; }
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+/* NAVBAR */
+.site-navbar {
+  min-height: 78px;
+  background: var(--brown-deep);
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 5px 22px #00000020;
+}
+
+.brand-logo {
+  color: var(--gold) !important;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.brand-logo span { color: var(--cream); }
+
+.site-navbar .nav-link {
+  color: var(--white);
+  font-size: .82rem;
+  font-weight: 600;
+  transition: color .2s ease;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus { color: var(--gold); }
+
+.navbar-toggler { border-color: #b8945870; }
+.navbar-toggler:focus { box-shadow: 0 0 0 .2rem #b8945840; }
+
+/* HERO */
+.hero-section {
+  position: relative;
+  display: grid;
+  min-height: min(760px, 82vh);
+  place-items: center;
+  overflow: hidden;
+  background: url(/Images/background-home.png) center 54% / cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #130d0bd9, #1b100a78 55%, #130d0bbd);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 15px;
+}
+
+.hero-eyebrow { color: #e0c18a; }
+
+.hero-logo {
+  margin: 0;
+  color: var(--gold);
+  font-family:  "Fleur De Leah", cursive;
+  font-size: clamp(5rem, 12vw, 9.5rem);
+  line-height: 1;
+  text-shadow: 0 4px 18px #0009;
+}
+
+.laurel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto 25px;
+}
+
+.laurel img {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-subtitle {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: var(--white);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.btn-main {
+  padding: 12px 28px;
+  border: 1px solid var(--burgundy);
+  border-radius: 30px;
+  background: var(--burgundy);
+  color: var(--white);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.btn-main:hover {
+  transform: translateY(-2px);
+  border-color: var(--burgundy-light);
+  background: var(--burgundy-light);
+  color: var(--white);
+}
+
+.btn-whatsapp {
+  border: 0;
+  background: var(--green);
+}
+
+.btn-whatsapp:hover { background: #267441; }
+
+.btn-whatsapp i, .reservation-section .btn i { margin-right: 7px; }
+
+.scroll-cue {
+  position: absolute;
+  z-index: 2;
+  bottom: 22px;
+  left: 50%;
+  color: var(--gold);
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+}
+
+/* HISTÓRIA */
+.history-section { padding: 0; }
+
+.history-image {
+  min-height: 620px;
+  background: url(/Images/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
+}
+
+.history-copy {
+  padding: clamp(55px, 8vw, 120px);
+  background: var(--burgundy);
+}
+
+.history-inner { max-width: 100%; }
+
+.history-inner > p {
+  align-items: center;
+  text-align: center;
+}
+
+.history-copy h2 { 
+  margin-bottom: 18px;
+  text-align: center;
+
+ }
+
+.history-copy p:not(.eyebrow) {
+  color: #eadfd7;
+  font-size: .88rem;
+  line-height: 1.9;
+}
+
+.title-rule {
+  max-width: 100%;
+  width: 600px;
+  height: 3px;
+  margin: 22px 0 30px;
+  background: linear-gradient(90deg, var(--green) 0 33%, var(--white) 33% 66%, #c64a42 66%);
+}
+
+.title-rule-center { margin: 22px auto 25px; }
+
+/* TÍTULOS DAS SEÇÕES */
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 52px;
+}
+
+.section-heading h2 { margin-bottom: 0; }
+
+.section-heading > p:last-child {
+  max-width: 660px;
+  margin: 0 auto;
+  color: #e0d1c3;
+  font-size: .88rem;
+}
+
+/* CARDÁPIO */
+.menu-section { background: var(--brown); }
+
+.dish-card { text-align: center; }
+
+.dish-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  border: 1px solid #b8945840;
+  border-radius: 9px;
+  object-fit: cover;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.dish-card:hover img {
+  transform: translateY(-5px);
+  filter: brightness(1.08);
+}
+
+.dish-card h3 {
+  margin: 13px 0 0;
+  color: var(--cream);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.section-action { margin-top: 45px; }
+
+.btn-outline-gold {
+  padding: 10px 30px;
+  border: 1px solid var(--burgundy);
+  border-radius: 30px;
+  background: var(--burgundy);
+  color: var(--white);
+  font-size: .72rem;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.btn-outline-gold:hover {
+  border-color: var(--gold);
+  background: transparent;
+  color: var(--gold);
+}
+
+/* ADEGA */
+.wine-section {
+  background: #3f2e27;
+  border-top: 1px solid #b8945825;
+  border-bottom: 1px solid #b8945825;
+}
+
+.wine-bottle {
+  display: grid;
+  min-height: 245px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #302d2b;
+}
+
+.wine-bottle img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  opacity: .9;
+  transition: transform .35s ease, opacity .35s ease;
+}
+
+.wine-card:hover .wine-bottle img {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+.wine-card h3 {
+  margin: 13px 0 0;
+  color: var(--cream);
+  font-size: 1.35rem;
+}
+
+.wine-card p {
+  margin: 0;
+  color: #cdbba9;
+  font-size: .72rem;
+}
+
+/* RESERVA */
+.reservation-section {
+  position: relative;
+  background: linear-gradient(#2b1b18d9, #2b1b18e8),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85") center / cover;
+}
+
+.reservation-section h2 {
+  max-width: 760px;
+  margin: 0 auto 18px;
+}
+
+.reservation-section p:not(.eyebrow) {
+  margin-bottom: 27px;
+  color: #e5d8ca;
+}
+
+/* CONTATO */
+.contact-section { background: var(--brown); }
+
+.contact-section h2 {
+  margin-bottom: 35px;
+  font-size: clamp(2.2rem, 3vw, 3rem);
+}
+
+.delivery-column { padding-right: clamp(20px, 5vw, 75px); }
+
+.registration-column {
+  padding-left: clamp(20px, 5vw, 75px);
+  border-left: 1px solid var(--gold);
+}
+
+.delivery-list {
+  display: grid;
+  gap: 17px;
+  max-width: 440px;
+}
+
+.delivery-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 78px;
+  padding: 12px 16px;
+  border: 1px solid #d9c5ad;
+  border-radius: 8px;
+  color: var(--cream);
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.delivery-option:hover {
+  border-color: var(--gold);
+  background: #ffffff08;
+  color: var(--white);
+}
+
+.delivery-mark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.ifood { background: #e73535; }
+.food99 { background: #f0c928; color: #27221a; }
+.keeta { background: #b6d93b; color: #302d2b; }
+
+.delivery-option strong,
+.delivery-option small { display: block; }
+
+.delivery-option strong { font-size: .8rem; }
+.delivery-option small { color: #cbb9a8; font-size: .68rem; }
+.delivery-option > i { margin-left: auto; color: var(--gold); }
+
+.registration-form { display: grid; gap: 22px; }
+
+.registration-form .form-floating > .form-control {
+  border: 0;
+  border-bottom: 1px solid var(--gold);
+  border-radius: 0;
+  background: transparent;
+  color: var(--white);
+  box-shadow: none;
+}
+
+.registration-form .form-floating > label {
+  color: #cdbba9;
+  font-size: .78rem;
+}
+
+.registration-form .form-control:focus { border-bottom-color: var(--white); }
+
+.registration-form .form-control:focus ~ label { color: var(--gold); }
+
+.registration-form .btn { justify-self: end; margin-top: 10px; }
+
+.form-note {
+  margin-top: 18px;
+  color: #bda997;
+  font-size: .68rem;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 65px 0 0;
+  border-top: 5px solid var(--gold);
+  background: #49352b;
+}
+
+.footer-main { padding-bottom: 45px; }
+
+.footer-info p {
+  margin: 0;
+  color: #e2d4c7;
+  font-size: .76rem;
+  line-height: 1.7;
+}
+
+.footer-info .footer-label {
+  margin-bottom: 5px;
+  color: var(--gold);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.footer-logo { display: inline-block; font-size: 4rem; }
+
+.footer-tagline {
+  margin-top: -4px;
+  color: var(--gold);
+  font-family: var(--display-font);
+  font-size: .85rem;
+  letter-spacing: .16em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: grid;
+  width: 37px;
+  height: 37px;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold);
+  transition: .2s ease;
+}
+
+.social-links a:hover {
+  background: var(--gold);
+  color: var(--brown-deep);
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 18px 0;
+  border-top: 1px solid #B8935A;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #d2c2b3;
+  font-size: .68rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 991.98px) {
+  .site-navbar .navbar-collapse { padding: 15px 0 20px; }
+  .site-navbar .navbar-nav { align-items: flex-start !important; gap: 5px !important; }
+  .history-image { min-height: 430px; }
+  .history-copy { padding: 65px 8vw; }
+  .registration-column { padding-left: 12px; border-left: 0; }
+  .delivery-column { padding-right: 12px; }
+}
+
+@media (max-width: 575.98px) {
+  .section-space { padding: 75px 0; }
+  .site-navbar { min-height: 70px; }
+  .brand-logo { font-size: 2.45rem; }
+  .hero-section { min-height: 650px; }
+  .hero-content { padding: 80px 18px; }
+  .hero-subtitle { font-size: .72rem; line-height: 1.8; }
+  .history-image { min-height: 340px; }
+  .history-copy { padding: 55px 25px; }
+  .history-copy p:not(.eyebrow) { font-size: .82rem; }
+  .section-heading { margin-bottom: 35px; }
+  .dish-card h3, .wine-card h3 { font-size: 1.12rem; }
+  .wine-bottle, .wine-bottle img { min-height: 185px; height: 185px; }
+  .contact-section h2 { margin-bottom: 25px; }
+  .delivery-column { padding-bottom: 20px; }
+  .footer-info, .footer-info.text-md-end { text-align: center !important; }
+  .social-links { justify-content: center; }
+  .footer-logo { margin-top: 10px; }
+}
