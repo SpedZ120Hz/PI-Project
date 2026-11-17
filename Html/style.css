@@ -93,7 +93,7 @@ h2 {
   min-height: min(760px, 82vh);
   place-items: center;
   overflow: hidden;
-  background: url(/Images/background-home.png) center 54% / cover no-repeat;
+  background: url(../Images/background-home.png) center 54% / cover no-repeat;
 }
 
 .hero-overlay {
@@ -188,7 +188,7 @@ h2 {
 
 .history-image {
   min-height: 620px;
-  background: url(/Images/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
+  background: url(../Images/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
 }
 
 .history-copy {
@@ -243,29 +243,81 @@ h2 {
 /* CARDÁPIO */
 .menu-section { background: var(--brown); }
 
-.dish-card { text-align: center; }
+.catalog-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  text-align: center;
+}
 
-.dish-card img {
+.catalog-card-toggle,
+.catalog-card-details { grid-area: 1 / 1; }
+
+.catalog-card-toggle {
+  position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1.08;
+  min-height: 100%;
+  aspect-ratio: 1 / 1.25;
+  overflow: hidden;
+  padding: 0;
   border: 1px solid #b8945840;
   border-radius: 9px;
+  background: #302d2b;
+}
+
+.catalog-card-toggle:focus-visible,
+.catalog-collection summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.catalog-card-toggle img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: transform .35s ease, filter .35s ease;
 }
 
-.dish-card:hover img {
-  transform: translateY(-5px);
-  filter: brightness(1.08);
+/* Mostra somente a foto na exportação que reúne os dois estados. */
+.catalog-card-cropped img {
+  inset: -5% auto auto -6%;
+  width: 227%;
+  max-width: none;
+  height: 110%;
+  object-fit: fill;
 }
 
-.dish-card h3 {
+.catalog-card-details {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  padding: clamp(.65rem, 1.4vw, 1.25rem);
+  border: 1px solid #b8945840;
+  border-radius: 9px;
+  background: #302d2b;
+  color: var(--cream);
+  pointer-events: none;
+}
+
+.catalog-card-details[hidden] { visibility: hidden; }
+
+.catalog-card-details p {
+  margin: 0;
+  font-size: .875rem;
+  line-height: 1.45;
+}
+
+.catalog-card h3 {
   margin: 13px 0 0;
   color: var(--cream);
   font-size: 1.35rem;
   line-height: 1.1;
 }
 
+.catalog-collection summary { list-style: none; }
+.catalog-collection summary::-webkit-details-marker { display: none; }
+.catalog-collection[open] .catalog-show-all,
+.catalog-collection:not([open]) .catalog-show-less { display: none; }
 .section-action { margin-top: 45px; }
 
 .btn-outline-gold {
@@ -290,40 +342,6 @@ h2 {
   background: #3f2e27;
   border-top: 1px solid #b8945825;
   border-bottom: 1px solid #b8945825;
-}
-
-.wine-bottle {
-  display: grid;
-  min-height: 245px;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #302d2b;
-}
-
-.wine-bottle img {
-  width: 100%;
-  height: 245px;
-  object-fit: cover;
-  opacity: .9;
-  transition: transform .35s ease, opacity .35s ease;
-}
-
-.wine-card:hover .wine-bottle img {
-  transform: scale(1.04);
-  opacity: 1;
-}
-
-.wine-card h3 {
-  margin: 13px 0 0;
-  color: var(--cream);
-  font-size: 1.35rem;
-}
-
-.wine-card p {
-  margin: 0;
-  color: #cdbba9;
-  font-size: .72rem;
 }
 
 /* RESERVA */
@@ -525,7 +543,6 @@ h2 {
   .history-copy p:not(.eyebrow) { font-size: .82rem; }
   .section-heading { margin-bottom: 35px; }
   .dish-card h3, .wine-card h3 { font-size: 1.12rem; }
-  .wine-bottle, .wine-bottle img { min-height: 185px; height: 185px; }
   .contact-section h2 { margin-bottom: 25px; }
   .delivery-column { padding-bottom: 20px; }
   .footer-info, .footer-info.text-md-end { text-align: center !important; }
