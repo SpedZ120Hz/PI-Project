@@ -1,0 +1,95 @@
+
+.single-carbonara { 
+    --single-bg:#49372d;
+    --single-accent:#b8935a;
+    --single-button:#4a1c24;
+    box-sizing:border-box;
+    position:relative;
+    min-height:100%;
+    padding:clamp(76px,6vw,110px) clamp(20px,3vw,40px) clamp(32px,4vw,64px);
+    background:var(--single-bg);
+    color:#fff;
+    font-family:Roboto,Arial,sans-serif;
+}
+.single-carbonara, .single-carbonara * { box-sizing:border-box; }
+.single-carbonara__close { 
+    position:absolute;
+    top:20px;
+    left:24px;
+    width:48px; height:48px; border:0; border-radius:50px; background:var(--single-button); color:var(--single-accent); font:800 32px/1 Roboto,Arial,sans-serif; cursor:pointer; }
+.single-carbonara__layout { display:grid; grid-template-columns:minmax(0,0.9fr) minmax(0,1fr); gap:clamp(24px,3vw,44px); max-width:1080px; margin:auto; }
+.single-carbonara__media { min-width:0; }
+.single-carbonara__photo { width:100%; aspect-ratio:1; overflow:hidden; border-radius:32px; background:#fff; }
+.single-carbonara__photo>img { display:block; width:100%; height:100%; object-fit:cover; }
+.single-carbonara__ingredients { margin-top:clamp(24px,3vw,44px); }
+.single-carbonara__ingredients>h2 { margin:0 0 10px; font-size:clamp(20px,1.8vw,26px); font-weight:800; line-height:1.2; color:var(--single-accent); }
+.single-carbonara__ingredients>p { margin:0; max-width:460px; font-size:clamp(16px,1.2vw,18px); font-weight:300; line-height:1.4; }
+.single-carbonara__content { border-left:3px solid rgba(184,147,90,.45); padding-left:clamp(22px,3vw,36px); min-width:0; }
+.single-carbonara__content>h1 { margin:0 0 22px; color:var(--single-accent); font-size:clamp(28px,3vw,44px); font-weight:800; line-height:1.16; }
+.single-carbonara__price { margin:0 0 18px; color:var(--single-accent); font-size:clamp(30px,3vw,42px); font-weight:800; line-height:1.2; }
+.single-carbonara__actions { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin:0 0 32px; }
+.single-carbonara__counter { display:flex; align-items:center; gap:9px; }
+.single-carbonara__counter>button { width:44px; height:44px; border:0; border-radius:10px; background:var(--single-button); color:#fff; font-size:26px; font-weight:800; cursor:pointer; }
+.single-carbonara__counter>button:first-child { background: #4a1c24; }
+.single-carbonara__counter>output { min-width:30px; text-align:center; font-size:32px; font-weight:800; color:var(--single-accent); }
+.single-carbonara__add { width:200px; min-height:52px; border:0; border-radius:28px; background:var(--single-button); color:var(--single-accent); font:400 18px/1.2 Roboto,Arial,sans-serif; cursor:pointer; transition:background-color .2s ease, color .2s ease; }
+@media (hover: hover) {
+    .single-carbonara__add:hover {
+        background-color: var(--single-accent);
+        color: var(--single-button);
+    }
+}
+.single-carbonara__description>p { margin:0 0 16px; max-width:540px; font-size:clamp(16px,1.45vw,21px); font-weight:300; line-height:1.35; }
+.single-carbonara button:focus-visible { outline:3px solid var(--single-accent); outline-offset:4px; }
+@media (max-width:950px) { .single-carbonara { padding:80px 20px 36px; } .single-carbonara__close { left:20px; } .single-carbonara__layout { grid-template-columns:1fr; gap:24px; max-width:500px; } .single-carbonara__content { border:0; margin:0; padding:0; } .single-carbonara__photo { max-width:420px; margin:auto; border-radius:24px; } .single-carbonara__ingredients { margin-top:20px; } .single-carbonara__content>h1 { margin-bottom:20px; } .single-carbonara__actions { margin-bottom:24px; } }
+@media (max-width:480px) { .single-carbonara__actions { align-items:stretch; } .single-carbonara__add { width:100%; } }
+
+.single-product-page {
+    margin: 0;
+}
+
+.single-product-page .single-carbonara {
+    min-height: 100vh;
+}
+
+.single-carbonara__close[href] {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
+.single-carbonara__close[href]:focus-visible {
+    outline: 3px solid var(--single-accent);
+    outline-offset: 4px;
+}
+
+.single-product-photo {
+    position: relative;
+}
+
+.single-product-photo > img {
+    position: absolute;
+    height: auto;
+    max-width: none;
+}
+
+[data-product-details] {
+    font-size: clamp(16px, 1.2vw, 18px);
+    line-height: 1.4;
+}
+
+.single-product-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 20px;
+    margin: 0;
+}
+
+.single-product-facts dd {
+    margin: 0;
+}
+
+.single-product-page .single-carbonara__add:only-child {
+    margin-left: auto;
+}
+

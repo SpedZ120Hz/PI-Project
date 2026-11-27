@@ -6,6 +6,7 @@
   <meta name="description" content="Pasticcio — tradição e culinária italiana na Zona Sul de São Paulo.">
   <title>Pasticcio | Cucina Italiana</title>
 
+  <link rel="stylesheet" href="CSS/reset.css">
   <!-- Bootstrap 5.3.3: CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -17,16 +18,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Links CSS -->
-
-
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
     <div class="container">
       <a class="navbar-brand brand-logo" href="#inicio">Pasticcio<span></span></a>
@@ -48,13 +43,12 @@
   </nav>
 
   <main>
-    <!-- HERO / HOME -->
     <section class="hero-section" id="inicio">
       <div class="hero-overlay"></div>
       <div class="container hero-content text-center">
         <h1 class="hero-logo">Pasticcio</h1>
-
-        <div class="laurel"><img src="../Images/image_5-removebg-preview 1.png" alt=""></div>
+        <div class="laurel">
+          <img src="/Images/arquivo.figma/image_5-removebg-preview 1.png" alt=""></div>
         <p class="hero-subtitle">O melhor da culinária italiana na Avenida Interlagos — Zona Sul SP</p>
         <a class="btn btn-main btn-whatsapp" href="#reserva">
           <i class="bi bi-whatsapp"></i> Reserve sua mesa
@@ -63,7 +57,6 @@
       <a href="#historia" class="scroll-cue" aria-label="Conheça nossa história"><i class="bi bi-chevron-down"></i></a>
     </section>
 
-    <!-- HISTÓRIA -->
     <section class="history-section section-space" id="historia">
       <div class="container-fluid px-0">
         <div class="row g-0 align-items-stretch">
@@ -82,7 +75,6 @@
       </div>
     </section>
 
-    <!-- CARDÁPIO -->
     <section class="menu-section section-space" id="cardapio">
       <div class="container">
         <header class="section-heading text-center">
@@ -94,92 +86,92 @@
 
         <div class="row g-4 menu-grid">
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Carbonara" aria-controls="dish-description-1" aria-expanded="false">
-                <img src="../Images/Carbonara.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=carbonara" class="dish-card catalog-card" aria-label="Detalhes de Carbonara" aria-controls="dish-description-1" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="/Images/arquivo.figma/Carbonara.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-1" hidden>
                 <p>Massa al dente com molho de gemas e pecorino romano, sem creme de leite. Finalizada com guanciale crocante e pimenta-do-reino.</p>
               </div>
               <h3>Carbonara</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Bruschetta al Pomodoro" aria-controls="dish-description-2" aria-expanded="false">
-                <img src="../Images/Bruschetta.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=bruschetta" class="dish-card catalog-card" aria-label="Detalhes de Bruschetta al Pomodoro" aria-controls="dish-description-2" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Bruschetta.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-2" hidden>
                 <p>Pão italiano tostado e esfregado com alho, coberto com tomates maduros, manjericão, sal marinho e azeite extravirgem.</p>
               </div>
               <h3>Bruschetta al Pomodoro</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Carpaccio di Manzo" aria-controls="dish-description-3" aria-expanded="false">
-                <img src="../Images/Carpaccio.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=carpaccio" class="dish-card catalog-card" aria-label="Detalhes de Carpaccio di Manzo" aria-controls="dish-description-3" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Carpaccio.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-3" hidden>
                 <p>Lâminas finas de filé-mignon cru sobre rúcula fresca, com lascas de parmesão, alcaparras e molho de limão-siciliano, azeite e pimenta-do-reino.</p>
               </div>
               <h3>Carpaccio di Manzo</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Arancini di Riso" aria-controls="dish-description-4" aria-expanded="false">
-                <img src="../Images/Arancini.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=arancini" class="dish-card catalog-card" aria-label="Detalhes de Arancini di Riso" aria-controls="dish-description-4" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Arancini.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-4" hidden>
                 <p>Bolinhos de risoto empanados em panko e recheados com muçarela. Acompanham molho rústico de tomate com manjericão e parmesão.</p>
               </div>
               <h3>Arancini di Riso</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Lasagna alla Bolognese" aria-controls="dish-description-5" aria-expanded="false">
-                <img src="../Images/Lasagna.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=lasagna" class="dish-card catalog-card" aria-label="Detalhes de Lasagna alla Bolognese" aria-controls="dish-description-5" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Lasagna.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-5" hidden>
                 <p>Massa fresca artesanal em camadas com ragù de carne, bechamel e parmesão, gratinada no forno.</p>
               </div>
               <h3>Lasagna alla Bolognese</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Risotto ai Funghi" aria-controls="dish-description-6" aria-expanded="false">
-                <img src="../Images/Frame 50.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=risotto-funghi" class="dish-card catalog-card" aria-label="Detalhes de Risotto ai Funghi" aria-controls="dish-description-6" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Frame 50.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-6" hidden>
                 <p>Arroz arbóreo cozido com caldo caseiro e vinho branco, cogumelos salteados no alho, manteiga, parmesão e salsinha.</p>
               </div>
               <h3>Risotto ai Funghi</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Ossobuco alla Milanese" aria-controls="dish-description-7" aria-expanded="false">
-                <img src="../Images/Frame 52.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=ossobuco" class="dish-card catalog-card" aria-label="Detalhes de Ossobuco alla Milanese" aria-controls="dish-description-7" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Frame 52.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-7" hidden>
                 <p>Jarrete bovino braseado com cenoura, aipo, cebola, tomate e vinho branco. Servido com seu molho e gremolata de limão, alho e salsa.</p>
               </div>
               <h3>Ossobuco alla Milanese</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="dish-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Insalata Caprese" aria-controls="dish-description-8" aria-expanded="false">
-                <img src="../Images/Frame 54.png" alt="" loading="lazy">
-              </button>
+            <a href="single.html?item=insalata-caprese" class="dish-card catalog-card" aria-label="Detalhes de Insalata Caprese" aria-controls="dish-description-8" aria-expanded="false">
+              <div class="catalog-card-toggle">
+                <img src="../Images/arquivo.figma/Frame 54.png" alt="" loading="lazy">
+              </div>
               <div class="catalog-card-details" id="dish-description-8" hidden>
                 <p>Tomate maduro, muçarela de búfala e manjericão, com azeite extravirgem, flor de sal e redução balsâmica.</p>
               </div>
               <h3>Insalata Caprese</h3>
-            </article>
+            </a>
           </div>
         </div>
         <details class="catalog-collection text-center section-action">
@@ -189,88 +181,87 @@
           </summary>
           <div class="row g-4 mt-2">
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Fettuccine ao Molho Branco" aria-controls="dish-description-9" aria-expanded="false">
-                  <img src="../Images/Frame 55.png" alt="" loading="lazy">
-                </button>
+              <a href="single.html?item=fettuccine" class="dish-card catalog-card" aria-label="Detalhes de Fettuccine ao Molho Branco" aria-controls="dish-description-9" aria-expanded="false">
+                <div class="catalog-card-toggle">
+                  <img src="../Images/arquivo.figma/Frame 55.png" alt="" loading="lazy">
+                </div>
                 <div class="catalog-card-details" id="dish-description-9" hidden>
                   <p>Fettuccine fresco com molho de manteiga, creme de leite e parmesão, finalizado com pimenta-do-reino e salsinha.</p>
                 </div>
                 <h3>Fettuccine ao Molho Branco</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Spaghetti alle Vongole" aria-controls="dish-description-10" aria-expanded="false">
-                  <img src="../Images/Frame 58.png" alt="" loading="lazy">
-                </button>
+              <a href="single.html?item=spaghetti-vongole" class="dish-card catalog-card" aria-label="Detalhes de Spaghetti alle Vongole" aria-controls="dish-description-10" aria-expanded="false">
+                <div class="catalog-card-toggle">
+                  <img src="../Images/arquivo.figma/Frame 58.png" alt="" loading="lazy">
+                </div>
                 <div class="catalog-card-details" id="dish-description-10" hidden>
                   <p>Spaghetti al dente salteado com vôngoles, alho, vinho branco e pimenta calabresa, finalizado com salsinha e azeite.</p>
                 </div>
                 <h3>Spaghetti alle Vongole</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Tiramisù" aria-controls="dish-description-11" aria-expanded="false">
-                  <img src="../Images/Frame 60.png" alt="" loading="lazy">
-                </button>
+              <a href="single.html?item=tiramisu" class="dish-card catalog-card" aria-label="Detalhes de Tiramisù" aria-controls="dish-description-11" aria-expanded="false">
+                <div class="catalog-card-toggle">
+                  <img src="../Images/arquivo.figma/Frame 60.png" alt="" loading="lazy">
+                </div>
                 <div class="catalog-card-details" id="dish-description-11" hidden>
                   <p>Biscoitos champanhe embebidos em café espresso, intercalados com creme de mascarpone e finalizados com cacau em pó.</p>
                 </div>
                 <h3>Tiramisù</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Parmigiana di Melanzane" aria-controls="dish-description-12" aria-expanded="false">
-                  <img src="../Images/Frame 62.png" alt="" loading="lazy">
-                </button>
+              <a href="single.html?item=parmigiana" class="dish-card catalog-card" aria-label="Detalhes de Parmigiana di Melanzane" aria-controls="dish-description-12" aria-expanded="false">
+                <div class="catalog-card-toggle">
+                  <img src="../Images/arquivo.figma/Frame 62.png" alt="" loading="lazy">
+                </div>
                 <div class="catalog-card-details" id="dish-description-12" hidden>
                   <p>Berinjela dourada em camadas com molho de tomate, muçarela e manjericão, gratinada com parmesão.</p>
                 </div>
                 <h3>Parmigiana di Melanzane</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Gnocchi di Patate al Sugo" aria-controls="dish-description-13" aria-expanded="false">
-                  <img src="../Images/Frame 64.png" alt="" loading="lazy">
-                </button>
+              <a href="single.html?item=gnocchi-sugo" class="dish-card catalog-card" aria-label="Detalhes de Gnocchi di Patate al Sugo" aria-controls="dish-description-13" aria-expanded="false">
+                <div class="catalog-card-toggle">
+                  <img src="../Images/arquivo.figma/Frame 64.png" alt="" loading="lazy">
+                </div>
                 <div class="catalog-card-details" id="dish-description-13" hidden>
                   <p>Nhoques artesanais de batata com molho de tomate fresco, manjericão, azeite e parmesão ralado na hora.</p>
                 </div>
                 <h3>Gnocchi di Patate al Sugo</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Risotto ai Frutti di Mare" aria-controls="dish-description-14" aria-expanded="false">
-                  <img src="../Images/Frame 66.png" alt="" loading="lazy">
-                </button>
+              <a href="single.html?item=risotto-frutti-di-mare" class="dish-card catalog-card" aria-label="Detalhes de Risotto ai Frutti di Mare" aria-controls="dish-description-14" aria-expanded="false">
+                <div class="catalog-card-toggle">
+                  <img src="../Images/arquivo.figma/Frame 66.png" alt="" loading="lazy">
+                </div>
                 <div class="catalog-card-details" id="dish-description-14" hidden>
                   <p>Arroz arbóreo com caldo de peixe e vinho branco, camarões, lulas, mexilhões e vôngoles. Finalizado com salsinha, limão-siciliano e azeite.</p>
                 </div>
                 <h3>Risotto ai Frutti di Mare</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="dish-card catalog-card">
-                <button type="button" class="catalog-card-toggle catalog-card-cropped" aria-label="Detalhes de Gnocchi al Pesto" aria-controls="dish-description-15" aria-expanded="false">
+              <a href="single.html?item=gnocchi-pesto" class="dish-card catalog-card" aria-label="Detalhes de Gnocchi al Pesto" aria-controls="dish-description-15" aria-expanded="false">
+                <div class="catalog-card-toggle catalog-card-cropped">
                   <img src="../Images/arquivo.figma/Component 14.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="dish-description-15" hidden>
                   <p>Nhoques artesanais de batata com pesto de manjericão, pinoli, alho, parmesão e azeite extravirgem. Finalizados com lascas de parmesão e manjericão.</p>
                 </div>
                 <h3>Gnocchi al Pesto</h3>
-              </article>
+              </a>
             </div>
           </div>
         </details>
       </div>
     </section>
 
-    <!-- ADEGA -->
     <section class="wine-section section-space" id="adega">
       <div class="container">
         <header class="section-heading text-center">
@@ -282,92 +273,92 @@
 
         <div class="row g-4 wine-grid">
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Chianti Classico Riserva" aria-controls="wine-description-1" aria-expanded="false">
+            <a href="single.html?item=chianti" class="wine-card catalog-card" aria-label="Detalhes de Chianti Classico Riserva" aria-controls="wine-description-1" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 70.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-1" hidden>
                 <p>Sangiovese da Toscana, com 18 meses em carvalho francês e seis em garrafa. Notas de cereja madura, violeta e especiarias, com acidez vibrante e taninos firmes.</p>
               </div>
               <h3>Chianti Classico Riserva</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Barolo" aria-controls="wine-description-2" aria-expanded="false">
+            <a href="single.html?item=barolo" class="wine-card catalog-card" aria-label="Detalhes de Barolo" aria-controls="wine-description-2" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 102.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-2" hidden>
                 <p>Nebbiolo do Piemonte, com 24 meses em carvalho da Slavônia e 12 em garrafa. Aromas de rosas secas, alcatrão, cereja negra e tabaco, com taninos marcantes.</p>
               </div>
               <h3>Barolo</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Montepulciano d’Abruzzo" aria-controls="wine-description-3" aria-expanded="false">
+            <a href="single.html?item=montepulciano" class="wine-card catalog-card" aria-label="Detalhes de Montepulciano d’Abruzzo" aria-controls="wine-description-3" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 74.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-3" hidden>
                 <p>Montepulciano da costa do Adriático, com estágio em cubas de cimento. Macio e frutado, com ameixa, amora e pimenta-preta. Acompanha massas ao molho de tomate.</p>
               </div>
               <h3>Montepulciano d’Abruzzo</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Primitivo di Manduria" aria-controls="wine-description-4" aria-expanded="false">
+            <a href="single.html?item=primitivo" class="wine-card catalog-card" aria-label="Detalhes de Primitivo di Manduria" aria-controls="wine-description-4" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 107.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-4" hidden>
                 <p>Primitivo da Puglia, com oito meses de estágio em carvalho americano. Encorpado, com geleia de frutas negras, figo seco e baunilha.</p>
               </div>
               <h3>Primitivo di Manduria</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Valpolicella Ripasso" aria-controls="wine-description-5" aria-expanded="false">
+            <a href="single.html?item=valpolicella" class="wine-card catalog-card" aria-label="Detalhes de Valpolicella Ripasso" aria-controls="wine-description-5" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 78.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-5" hidden>
                 <p>Corvina, Corvinone e Rondinella do Vêneto. Passa pelas cascas do Amarone e estagia 18 meses em carvalho. Notas de cereja em calda, amêndoa e especiarias doces.</p>
               </div>
               <h3>Valpolicella Ripasso</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Barbera d’Alba" aria-controls="wine-description-6" aria-expanded="false">
+            <a href="single.html?item=barbera" class="wine-card catalog-card" aria-label="Detalhes de Barbera d’Alba" aria-controls="wine-description-6" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 80.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-6" hidden>
                 <p>Barbera do Piemonte, com dez meses em carvalho francês usado. Notas de cereja azeda, framboesa e violeta, com acidez marcante e taninos suaves.</p>
               </div>
               <h3>Barbera d’Alba</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Nero d’Avola" aria-controls="wine-description-7" aria-expanded="false">
+            <a href="single.html?item=nero-d-avola" class="wine-card catalog-card" aria-label="Detalhes de Nero d’Avola" aria-controls="wine-description-7" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 82.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-7" hidden>
                 <p>Nero d’Avola da Sicília, com seis meses em aço inox. Notas de ameixa, amora, especiarias e ervas mediterrâneas, com taninos aveludados.</p>
               </div>
               <h3>Nero d’Avola</h3>
-            </article>
+            </a>
           </div>
           <div class="col-6 col-md-3">
-            <article class="wine-card catalog-card">
-              <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Pinot Grigio delle Venezie" aria-controls="wine-description-8" aria-expanded="false">
+            <a href="single.html?item=pinot-grigio" class="wine-card catalog-card" aria-label="Detalhes de Pinot Grigio delle Venezie" aria-controls="wine-description-8" aria-expanded="false">
+              <div class="catalog-card-toggle">
                 <img src="../Images/wines/Frame 84.png" alt="" loading="lazy">
-              </button>
+              </div>
               <div class="catalog-card-details" id="wine-description-8" hidden>
                 <p>Pinot Grigio do nordeste da Itália, fermentado em aço inox a baixa temperatura. Leve, seco e fresco, com notas de pera, maçã verde e flores brancas.</p>
               </div>
               <h3>Pinot Grigio delle Venezie</h3>
-            </article>
+            </a>
           </div>
         </div>
         <details class="catalog-collection text-center section-action">
@@ -377,88 +368,87 @@
           </summary>
           <div class="row g-4 mt-2">
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Gavi di Gavi" aria-controls="wine-description-9" aria-expanded="false">
+              <a href="single.html?item=gavi" class="wine-card catalog-card" aria-label="Detalhes de Gavi di Gavi" aria-controls="wine-description-9" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 86.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-9" hidden>
                   <p>Cortese do Piemonte, fermentado em aço inox. Vinho seco e mineral, com notas de maçã verde, flor de tília e amêndoa fresca.</p>
                 </div>
                 <h3>Gavi di Gavi</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Soave Classico" aria-controls="wine-description-10" aria-expanded="false">
+              <a href="single.html?item=soave" class="wine-card catalog-card" aria-label="Detalhes de Soave Classico" aria-controls="wine-description-10" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 88.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-10" hidden>
                   <p>Garganega de solos vulcânicos, com cinco meses sobre as borras. Notas de pêssego branco, amêndoa e flores do campo. Acompanha risotos e massas cremosas.</p>
                 </div>
                 <h3>Soave Classico</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Rosato di Toscana" aria-controls="wine-description-11" aria-expanded="false">
+              <a href="single.html?item=rosato" class="wine-card catalog-card" aria-label="Detalhes de Rosato di Toscana" aria-controls="wine-description-11" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 90.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-11" hidden>
                   <p>Rosé de Sangiovese com breve maceração. Fresco, leve e seco, com aromas de morango, framboesa e pétalas de rosa.</p>
                 </div>
                 <h3>Rosato di Toscana</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Prosecco DOC Brut" aria-controls="wine-description-12" aria-expanded="false">
+              <a href="single.html?item=prosecco" class="wine-card catalog-card" aria-label="Detalhes de Prosecco DOC Brut" aria-controls="wine-description-12" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 92.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-12" hidden>
                   <p>Glera do Vêneto, com segunda fermentação pelo método Charmat. Fresco e leve, com notas de maçã verde, pera e flores brancas.</p>
                 </div>
                 <h3>Prosecco DOC Brut</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Franciacorta Brut" aria-controls="wine-description-13" aria-expanded="false">
+              <a href="single.html?item=franciacorta" class="wine-card catalog-card" aria-label="Detalhes de Franciacorta Brut" aria-controls="wine-description-13" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 94.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-13" hidden>
                   <p>Chardonnay e Pinot Nero da Lombardia, com segunda fermentação em garrafa e 24 meses sobre as leveduras. Notas de brioche, maçã assada e amêndoas.</p>
                 </div>
                 <h3>Franciacorta Brut</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Moscato d’Asti" aria-controls="wine-description-14" aria-expanded="false">
+              <a href="single.html?item=moscato" class="wine-card catalog-card" aria-label="Detalhes de Moscato d’Asti" aria-controls="wine-description-14" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 96.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-14" hidden>
                   <p>Moscato Bianco do Piemonte, levemente gaseificado e de baixo teor alcoólico. Doce e fresco, com notas de pêssego, flor de laranjeira e uva. Acompanha o tiramisù.</p>
                 </div>
                 <h3>Moscato d’Asti</h3>
-              </article>
+              </a>
             </div>
             <div class="col-6 col-md-3">
-              <article class="wine-card catalog-card">
-                <button type="button" class="catalog-card-toggle" aria-label="Detalhes de Vermentino di Sardegna" aria-controls="wine-description-15" aria-expanded="false">
+              <a href="single.html?item=vermentino" class="wine-card catalog-card" aria-label="Detalhes de Vermentino di Sardegna" aria-controls="wine-description-15" aria-expanded="false">
+                <div class="catalog-card-toggle">
                   <img src="../Images/wines/Frame 98.png" alt="" loading="lazy">
-                </button>
+                </div>
                 <div class="catalog-card-details" id="wine-description-15" hidden>
                   <p>Vermentino da costa da Sardenha, com quatro meses sobre as borras finas. Cítrico e mineral, com notas de limão-siciliano, ervas e um toque salino. Acompanha frutos do mar.</p>
                 </div>
                 <h3>Vermentino di Sardegna</h3>
-              </article>
+              </a>
             </div>
           </div>
         </details>
       </div>
     </section>
 
-    <!-- RESERVA -->
     <section class="reservation-section section-space" id="reserva">
       <div class="container text-center">
         <p class="eyebrow">Esperamos por você</p>
@@ -470,8 +460,6 @@
       </div>
     </section>
 
-    <!-- CONTATO / DELIVERY -->
-     
        <section class="contact-section section-space" id="contato">
       <div class="container">
         <div class="row g-5">
@@ -479,23 +467,24 @@
             <p class="eyebrow">Peça sem sair de casa</p>
             <h2>Prefere pedido online?</h2>
             <div class="delivery-list">
-              <a href="#" class="delivery-option">
-                <span class="delivery-mark ifood"><img src="../Images/ifood3 1.png" alt=""></span>
+              <a href="https://parceiros.ifood.com.br/restaurante?network=g&utm_source=google&utm_medium=cpc&utm_campaign=ifood_br_b2b_g-search-brand_aon_kw-ifood_ifood-exata&utm_content=675464984059&utm_term=ifood-e&gad_source=1&gad_campaignid=20597603447&gbraid=0AAAAABq33MLAxXODpgNJSGApJAHG27f8y&gclid=Cj0KCQiAiJXYBhD_ARIsAAx2AHno1Z9-BHQOXv9jNqrvb4_kuFg7CB1dAF3yV4KjERgMXW51Aq5jAtEaAtTXEALw_wcB" class="delivery-option">
+                
+                <span class="delivery-mark ifood"><img src="/Images/arquivo.figma/ifood3 1.png" alt=""></span>
                 <span>
                   <strong>iFood</strong>
                   <small>Peça e acompanhe a entrega pelo app.</small>
                 </span>
                 <i class="bi bi-arrow-up-right"></i>
               </a>
-              <a href="#" class="delivery-option">
-                <span class="delivery-mark food99"><img src="../Images/Frame 101.png" alt=""></span>
+              <a href="https://merchant.99app.com/pt-BR/store?country=BR&channel=107&campaign_id=23513263111&campaign=BR_google_food_restaurant_acquisition_SEM_full_platform_SP&ad_group_id&creative_id&source&is_from_marketing=1&utm_term=99%20food&gad_source=1&gad_campaignid=23513263111&gbraid=0AAAAACelNxlL-c7gQnc15wRuWLLKa70eX&gclid=Cj0KCQiAiJXYBhD_ARIsAAx2AHn3TLDSkVIr-SsYlXGLWoD4FnfQtnifPlxPLOOHuLUP40nrFWNBgJYaAvbvEALw_wcB" class="delivery-option">
+                <span class="delivery-mark food99"><img src="/Images/arquivo.figma/Frame 101.png" alt=""></span>
                 <span>
                   <strong>99Food</strong>
                   <small>Cupons e entrega rápida na sua região.</small>
                 </span>
                 <i class="bi bi-arrow-up-right"></i></a>
-              <a href="#" class="delivery-option">
-                <span class="delivery-mark keeta"><img src="../Images/keeta 1.png" alt=""></span>
+              <a href="https://www.keeta-global.com/BR/pt-BR" class="delivery-option">
+                <span class="delivery-mark keeta"><img src="/Images/arquivo.figma/keeta 1.png" alt=""></span>
                 <span>
                   <strong>Keeta</strong>
                   <small>Também chegamos por lá!</small>
@@ -529,8 +518,6 @@
     </section>
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="site-footer" id="footer">
     <div class="container">
       <div class="row align-items-center gy-4 footer-main">
@@ -548,8 +535,8 @@
           <p class="footer-label">Contato</p>
           <p>fettuccine@email.com<br>(00) 00000-0000</p>
           <div class="social-links">
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/guuh.melo_?avpt=MXRhcHQwaW8xd2pvdg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/5511956067122" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -559,7 +546,7 @@
     </div>
   </footer>
 
-  <!-- Bootstrap 5.3.3: JavaScript bundle (necessário para o menu mobile) -->
+  <!-- Bootstrap 5.3.3: JavaScript bundle (necessário para mobile) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="catalog.js" defer></script>
 </body>

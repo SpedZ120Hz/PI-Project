@@ -1,4 +1,4 @@
-document.querySelectorAll(".catalog-card-toggle").forEach((button) => {
+document.querySelectorAll(".catalog-card-toggle[aria-controls], a.catalog-card[aria-controls]").forEach((button) => {
     const details = document.getElementById(button.getAttribute("aria-controls"));
     let pinned = false;
 
@@ -18,6 +18,8 @@ document.querySelectorAll(".catalog-card-toggle").forEach((button) => {
     });
 
     button.addEventListener("click", () => {
+        if (button.tagName === "A") return;
+
         pinned = !pinned;
         showDetails(pinned);
     });

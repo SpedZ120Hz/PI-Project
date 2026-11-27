@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 h2 {
   color: var(--gold);
-  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-size: clamp(2.5rem, 4.6vw, 4rem);
   line-height: 1.05;
 }
 
@@ -93,7 +93,7 @@ h2 {
   min-height: min(760px, 82vh);
   place-items: center;
   overflow: hidden;
-  background: url(../Images/background-home.png) center 54% / cover no-repeat;
+  background: url(/Images/arquivo.figma/background-home.png) center 54% / cover no-repeat;
 }
 
 .hero-overlay {
@@ -188,7 +188,7 @@ h2 {
 
 .history-image {
   min-height: 620px;
-  background: url(../Images/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
+  background: url(/Images/arquivo.figma/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
 }
 
 .history-copy {
@@ -200,7 +200,7 @@ h2 {
 
 .history-inner > p {
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .history-copy h2 { 
@@ -366,7 +366,7 @@ h2 {
 
 .contact-section h2 {
   margin-bottom: 35px;
-  font-size: clamp(2.2rem, 3vw, 3rem);
+  font-size: clamp(2.4rem, 3.6vw, 3.5rem);
 }
 
 .delivery-column { padding-right: clamp(20px, 5vw, 75px); }
@@ -413,7 +413,7 @@ h2 {
 }
 
 .ifood { background: #e73535; }
-.food99 { background: #f0c928; color: #27221a; }
+.food99 { background: #333; color: #27221a; }
 .keeta { background: #b6d93b; color: #302d2b; }
 
 .delivery-option strong,
