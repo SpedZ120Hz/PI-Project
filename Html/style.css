@@ -93,7 +93,7 @@ h2 {
   min-height: min(760px, 82vh);
   place-items: center;
   overflow: hidden;
-  background: url(/Images/arquivo.figma/background-home.png) center 54% / cover no-repeat;
+  background: url(../Images/arquivo.figma/background-home.png) center 54% / cover no-repeat;
 }
 
 .hero-overlay {
@@ -188,7 +188,7 @@ h2 {
 
 .history-image {
   min-height: 620px;
-  background: url(/Images/arquivo.figma/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
+  background: url(../Images/arquivo.figma/Gemini_Generated_Image_mvkg6nmvkg6nmvkg.jfif) center / cover no-repeat;
 }
 
 .history-copy {
